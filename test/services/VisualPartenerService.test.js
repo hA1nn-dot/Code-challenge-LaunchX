@@ -11,4 +11,11 @@ describe("Testing VisualParterService", () => {
         const studentsEmail = VisualPartnerService.getEmailsByCertification(students);
         expect(studentsEmail).toEqual(["hgq_2000@hotmail.com"]);
     });
+
+    test("3) Get students above 500 credits", () => {
+        const credits = 500;
+        const students = [{name: "Haim", email: "hgq_2000@hotmail.com", credits: 100}, {name: "Jose", email: "xyz@hotmail.com", credits: 560}]
+        const studentsBycredits = VisualPartnerService.getStudentsAboveCredits(students, credits);
+        expect(studentsBycredits.length).toBe(1);
+    });
 })
