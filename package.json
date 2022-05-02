@@ -1,0 +1,22 @@
+{
+  "name": "week_4_code_challenge",
+  "version": "1.0.0",
+  "description": "New Challenge abroad",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hA1nn-dot/Code-challenge-LaunchX.git"
+  },
+  "author": "hA1nn-dot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hA1nn-dot/Code-challenge-LaunchX/issues"
+  },
+  "homepage": "https://github.com/hA1nn-dot/Code-challenge-LaunchX#readme",
+  "devDependencies": {
+    "jest": "^28.0.3"
+  }
+}
