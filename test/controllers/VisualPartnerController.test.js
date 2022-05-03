@@ -7,7 +7,8 @@ describe("Testing VisualPartnerController", () => {
 
     test("2) Get emails of students if have certification", () => {
         const studentsEmail = VisualPartnerController.getStudentsEmailByCertification();
-        expect(studentsEmail.length).toBe(51);
+        expect(studentsEmail.length).toBe(29);
+        expect(studentsEmail.some(email => email == undefined)).toBeFalsy()
     });
 
     test("3) Get students above 500 credits", () => {
